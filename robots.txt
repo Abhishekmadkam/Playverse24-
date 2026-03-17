@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+Allow: /games/
+Allow: /play/
+Allow: /categories/
+Allow: /blog/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /tmp/
+Disallow: /*.php$
+Disallow: /*.aspx$
+
+User-agent: Googlebot
+Allow: /
+Allow: /games/
+Allow: /play/
+Allow: /categories/
+Allow: /blog/
+
+User-agent: Bingbot
+Allow: /
+Allow: /games/
+Allow: /play/
+
+Crawl-delay: 1
+Request-rate: 30/1m
+
+Sitemap: https://playverse24.com/sitemap.xml
+Sitemap: https://playverse24.com/games-sitemap.xml

@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play free online games on Playverse24. Explore action, racing, puzzle, and multiplayer games instantly without downloads. Best HTML5 games in 2026.">
+    <meta name="keywords" content="free online games, play games online, browser games free, HTML5 games, instant games without download, best online games 2026, multiplayer browser games, action games online free, racing games online">
+    <meta name="author" content="Playverse24">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Playverse24 - Free Online Games Platform">
+    <meta property="og:description" content="Play thousands of free online games instantly. No download required.">
+    <meta property="og:url" content="https://playverse24.com">
+    <meta property="og:image" content="https://playverse24.com/og-image.jpg">
+    <meta property="og:site_name" content="Playverse24">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Playverse24 - Free Online Games">
+    <meta name="twitter:description" content="Play free online games instantly. Action, Racing, Puzzle & more!">
+    <meta name="twitter:image" content="https://playverse24.com/twitter-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://playverse24.com">
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Audiowide&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <title>Playverse24 - Free Online Games Platform | Play Thousands of Games</title>
+    
+    <!-- Schema Markup - Website -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Playverse24",
+        "url": "https://playverse24.com",
+        "description": "Your Ultimate Gaming Universe - Play free online games instantly",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://playverse24.com/search?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    
+    <!-- Schema Markup - Game Collection -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Free Online Games",
+        "url": "https://playverse24.com",
+        "description": "Thousands of free online HTML5 games for instant play",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Playverse24",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://playverse24.com/logo.png"
+            }
+        }
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #00ffff;
+            --primary-dark: #00d9d9;
+            --secondary: #ff006e;
+            --accent: #ffb700;
+            --accent-light: #ffd60a;
+            --background: #0a0e27;
+            --background-light: #f5f7fa;
+            --surface: #1a1f3a;
+            --surface-light: #ffffff;
+            --text-primary: #ffffff;
+            --text-secondary: #b0b8d4;
+            --text-light: #000000;
+            --text-light-secondary: #666666;
+            --border: #2a2f4a;
+            --border-light: #e0e0e0;
+            --hover-overlay: rgba(0, 255, 255, 0.1);
+            --glow: 0 0 20px rgba(0, 255, 255, 0.3);
+        }
+
+        [data-theme="light"] {
+            --background: #f5f7fa;
+            --surface: #ffffff;
+            --text-primary: #000000;
+            --text-secondary: #666666;
+            --border: #e0e0e0;
+            --hover-overlay: rgba(0, 255, 255, 0.05);
+            --glow: 0 0 20px rgba(0, 255, 255, 0.15);
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* ============ HEADER & NAVIGATION ============ */
+        header {
+            background: linear-gradient(135deg, var(--surface), rgba(26, 31, 58, 0.95));
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--primary);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 8px 32px rgba(0, 255, 255, 0.1);
+            animation: slideDown 0.5s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-family: 'Audiowide', cursive;
+            font-size: 1.8rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 2px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .logo::before {
+            content: '▶';
+            color: var(--primary);
+            margin-right: 0.5rem;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .nav-right {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .search-box {
+            background: var(--background);
+            border: 1px solid var(--primary);
+            border-radius: 8px;
+            padding: 0.6rem 1rem;
+            color: var(--text-primary);
+            width: 200px;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .search-box:focus {
+            outline: none;
+            box-shadow: var(--glow);
+            border-color: var(--primary);
+            width: 250px;
+        }
+
+        .search-box::placeholder {
+            color: var(--text-secondary);
+        }
+
+        .theme-toggle {
+            background: var(--background);
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            cursor: pointer;
+            padding: 0.6rem 0.8rem;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .theme-toggle:hover {
+            background: var(--primary);
+            color: var(--background);
+            box-shadow: var(--glow);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* ============ SEARCH SUGGESTIONS ============ */
+        .search-suggestions {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin-top: 0.5rem;
+            max-height: 300px;
+            overflow-y: auto;
+            width: 250px;
+            z-index: 100;
+            display: none;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .search-suggestions.active {
+            display: block;
+        }
+
+        .search-suggestion-item {
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border-left: 3px solid transparent;
+            border-left-color: var(--primary);
+        }
+
+        .search-suggestion-item:hover {
+            background: var(--hover-overlay);
+        }
+
+        /* ============ HERO SECTION ============ */
+        .hero {
+            background: linear-gradient(135deg, var(--background) 0%, var(--surface) 100%);
+            padding: 6rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(0, 255, 255, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -50%;
+            left: -10%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255, 0, 110, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 900;
+            margin-bottom: 1rem;
+            letter-spacing: -1px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+            text-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.9rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: left 0.3s ease;
+            z-index: -1;
+        }
+
+        .btn:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--background);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0, 255, 255, 0.6);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: var(--background);
+            transform: translateY(-3px);
+        }
+
+        /* ============ FEATURED GAMES SECTION ============ */
+        .section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .section-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .game-card {
+            background: var(--surface);
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border);
+            animation: cardScale 0.5s ease-out both;
+        }
+
+        .game-card:nth-child(1) { animation-delay: 0.1s; }
+        .game-card:nth-child(2) { animation-delay: 0.2s; }
+        .game-card:nth-child(3) { animation-delay: 0.3s; }
+        .game-card:nth-child(4) { animation-delay: 0.4s; }
+        .game-card:nth-child(5) { animation-delay: 0.5s; }
+        .game-card:nth-child(6) { animation-delay: 0.6s; }
+
+        @keyframes cardScale {
+            from {
+                opacity: 0;
+                transform: scale(0.8) translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        .game-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 20px 40px rgba(0, 255, 255, 0.2);
+        }
+
+        .game-thumbnail {
+            width: 100%;
+            height: 140px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .game-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .game-card:hover .game-thumbnail img {
+            transform: scale(1.1);
+        }
+
+        .game-info {
+            padding: 1.5rem;
+        }
+
+        .game-title {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .game-category {
+            display: inline-block;
+            background: rgba(0, 255, 255, 0.1);
+            color: var(--primary);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .game-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .game-rating {
+            display: flex;
+            gap: 0.25rem;
+            color: var(--accent);
+        }
+
+        .game-card .play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+            z-index: 10;
+            color: var(--background);
+        }
+
+        .game-thumbnail {
+            position: relative;
+        }
+
+        .game-card:hover .play-btn {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .game-plays {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        /* ============ CATEGORIES SECTION ============ */
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .category-card {
+            background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(255, 0, 110, 0.1));
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem 1rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(0, 255, 255, 0.2);
+        }
+
+        .category-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+
+        .category-name {
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .category-count {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+        }
+
+        /* ============ BREADCRUMB NAVIGATION ============ */
+        .breadcrumb {
+            padding: 1rem 2rem;
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            max-width: 1400px;
+            margin: 0 auto;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--primary-dark);
+        }
+
+        .breadcrumb span {
+            color: var(--text-secondary);
+            margin: 0 0.5rem;
+        }
+
+        /* ============ PAGINATION ============ */
+        .pagination {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .pagination a,
+        .pagination button {
+            width: 40px;
+            height: 40px;
+            border: 1px solid var(--border);
+            background: var(--surface);
+            color: var(--text-primary);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .pagination a:hover,
+        .pagination button:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .pagination .active {
+            background: var(--primary);
+            color: var(--background);
+            border-color: var(--primary);
+        }
+
+        /* ============ FOOTER ============ */
+        footer {
+            background: linear-gradient(135deg, var(--surface), var(--background));
+            border-top: 2px solid var(--primary);
+            padding: 4rem 2rem 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-section ul li a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--primary);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: var(--background);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+
+        .social-links a:hover {
+            background: var(--primary);
+            color: var(--background);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--border);
+            padding-top: 2rem;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* ============ RESPONSIVE DESIGN ============ */
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            nav {
+                display: none;
+            }
+
+            nav.active {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--surface);
+                padding: 2rem 1rem;
+                border-bottom: 1px solid var(--border);
+                gap: 1rem;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .search-box {
+                width: 150px;
+            }
+
+            .search-box:focus {
+                width: 200px;
+            }
+
+            .hero {
+                padding: 3rem 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .section {
+                padding: 2rem 1rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .games-grid {
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+                gap: 1.5rem;
+            }
+
+            .categories-grid {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                gap: 1rem;
+            }
+
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.3rem;
+            }
+
+            .search-box {
+                display: none;
+            }
+
+            .theme-toggle {
+                padding: 0.5rem 0.6rem;
+            }
+
+            .hero {
+                padding: 2rem 1rem;
+            }
+
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .games-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+
+            .section {
+                padding: 1.5rem 1rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ============ UTILITY CLASSES ============ */
+        .hidden {
+            display: none !important;
+        }
+
+        .visible {
+            display: block !important;
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.5s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Loading animation */
+        .spinner {
+            width: 30px;
+            height: 30px;
+            border: 3px solid var(--border);
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Smooth scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--background);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--primary-dark);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="header-container">
+            <a href="#home" class="logo">Playverse24</a>
+            
+            <nav id="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#games">Games</a>
+                <a href="#categories">Categories</a>
+                <a href="#trending">Trending</a>
+                <a href="#new-games">New</a>
+            </nav>
+
+            <div class="nav-right">
+                <div style="position: relative;">
+                    <input type="text" id="search-box" class="search-box" placeholder="Search games...">
+                    <div id="search-suggestions" class="search-suggestions"></div>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" title="Toggle dark/light mode">🌙</button>
+                <button id="menu-toggle" class="menu-toggle">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Playverse24 – Your Ultimate Gaming Universe</h1>
+                <p>Play thousands of free online games instantly. No download required. Experience action, racing, puzzles, and multiplayer games all in one place.</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('games')">Explore Games</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('categories')">Browse Categories</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Games Section -->
+        <section class="section" id="games">
+            <h2 class="section-title">🌟 Featured Games</h2>
+            <p class="section-subtitle">Play our handpicked collection of the best online games</p>
+            <div class="games-grid" id="featured-games">
+                <!-- Games will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Trending Games Section -->
+        <section class="section" id="trending">
+            <h2 class="section-title">🔥 Trending Now</h2>
+            <p class="section-subtitle">Discover what players are loving right now</p>
+            <div class="games-grid" id="trending-games">
+                <!-- Games will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="section" id="categories">
+            <h2 class="section-title">🎮 Popular Categories</h2>
+            <p class="section-subtitle">Explore games by your favorite genre</p>
+            <div class="categories-grid" id="categories-grid">
+                <!-- Categories will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- New Games Section -->
+        <section class="section" id="new-games">
+            <h2 class="section-title">✨ New Games</h2>
+            <p class="section-subtitle">Latest releases added to Playverse24</p>
+            <div class="games-grid" id="new-games-grid">
+                <!-- Games will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- FAQ Section with Schema Markup -->
+        <section class="section">
+            <h2 class="section-title">❓ Frequently Asked Questions</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; cursor: pointer;" class="faq-item">
+                    <h3 style="color: var(--primary); margin-bottom: 0.5rem;">Are all games on Playverse24 free to play?</h3>
+                    <p style="color: var(--text-secondary); margin: 0; display: none;">Yes! All games on Playverse24 are completely free. No hidden charges, no premium memberships required. Play as much as you want!</p>
+                </div>
+                <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; cursor: pointer;" class="faq-item">
+                    <h3 style="color: var(--primary); margin-bottom: 0.5rem;">Do I need to download anything to play?</h3>
+                    <p style="color: var(--text-secondary); margin: 0; display: none;">No downloads needed! All games are HTML5-based and run directly in your browser. Just click and play instantly.</p>
+                </div>
+                <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; cursor: pointer;" class="faq-item">
+                    <h3 style="color: var(--primary); margin-bottom: 0.5rem;">What devices can I play on?</h3>
+                    <p style="color: var(--text-secondary); margin: 0; display: none;">Playverse24 works on desktop computers, tablets, and smartphones. Just open your browser and start playing!</p>
+                </div>
+                <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; cursor: pointer;" class="faq-item">
+                    <h3 style="color: var(--primary); margin-bottom: 0.5rem;">Is my data safe on Playverse24?</h3>
+                    <p style="color: var(--text-secondary); margin: 0; display: none;">We take privacy seriously. No personal information is required to play. Games run in your browser without collecting sensitive data.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Playverse24</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 1rem;">Your ultimate destination for free online games. Play instantly, no downloads required.</p>
+                <div class="social-links">
+                    <a href="#" title="Facebook">f</a>
+                    <a href="#" title="Twitter">𝕏</a>
+                    <a href="#" title="Instagram">📷</a>
+                    <a href="#" title="YouTube">▶</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#trending">Trending</a></li>
+                    <li><a href="#new-games">New Games</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="/games/action">Action Games</a></li>
+                    <li><a href="/games/racing">Racing Games</a></li>
+                    <li><a href="/games/puzzle">Puzzle Games</a></li>
+                    <li><a href="/games/multiplayer">Multiplayer</a></li>
+                    <li><a href="/games/arcade">Arcade Games</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms & Conditions</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/dmca">DMCA</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Playverse24. All rights reserved. | Play free online games instantly without downloads.</p>
+        </div>
+    </footer>
+
+    <!-- Robots.txt Content (Info) -->
+    <script>
+        const robotsTxt = `
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /private
+Sitemap: https://playverse24.com/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+        `;
+
+        const sitemapXml = `
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://playverse24.com</loc>
+        <lastmod>2026-03-17</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://playverse24.com/games/action</loc>
+        <lastmod>2026-03-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://playverse24.com/games/racing</loc>
+        <lastmod>2026-03-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://playverse24.com/games/puzzle</loc>
+        <lastmod>2026-03-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>
+        `;
+    </script>
+
+    <script>
+        // ============ GAME DATA ============
+        const gameDatabase = {
+            featured: [
+                { id: 1, title: 'Sky Runner', category: 'Action', emoji: '🚀', rating: 4.8, plays: '5.2M', likes: 85 },
+                { id: 2, title: 'Speed Racer', category: 'Racing', emoji: '🏎️', rating: 4.7, plays: '3.8M', likes: 82 },
+                { id: 3, title: 'Block Master', category: 'Puzzle', emoji: '🧩', rating: 4.9, plays: '4.1M', likes: 90 },
+                { id: 4, title: 'Quest Legend', category: 'Adventure', emoji: '⚔️', rating: 4.6, plays: '2.9M', likes: 78 },
+                { id: 5, title: 'Dino Jump', category: 'Arcade', emoji: '🦕', rating: 4.8, plays: '6.3M', likes: 88 },
+                { id: 6, title: 'Super Ball', category: 'Sports', emoji: '⚽', rating: 4.7, plays: '3.4M', likes: 81 },
+            ],
+            trending: [
+                { id: 7, title: 'Cosmic Battle', category: 'Shooting', emoji: '👾', rating: 4.9, plays: '7.2M', likes: 92 },
+                { id: 8, title: 'Marble Blast', category: 'Puzzle', emoji: '🔮', rating: 4.8, plays: '5.6M', likes: 86 },
+                { id: 9, title: 'Monster Chase', category: 'Action', emoji: '👹', rating: 4.6, plays: '4.2M', likes: 79 },
+                { id: 10, title: 'Ninja Strike', category: 'Action', emoji: '🥷', rating: 4.7, plays: '3.7M', likes: 84 },
+                { id: 11, title: 'Bubble Pop', category: 'Arcade', emoji: '🫧', rating: 4.8, plays: '8.1M', likes: 89 },
+                { id: 12, title: 'Snake Kingdom', category: 'Arcade', emoji: '🐍', rating: 4.7, plays: '4.9M', likes: 83 },
+            ],
+            newGames: [
+                { id: 13, title: 'Robot Rampage', category: 'Action', emoji: '🤖', rating: 4.8, plays: '2.1M', likes: 87 },
+                { id: 14, title: 'Ice Runner', category: 'Racing', emoji: '❄️', rating: 4.7, plays: '1.8M', likes: 80 },
+                { id: 15, title: 'Logic Puzzle', category: 'Puzzle', emoji: '🧠', rating: 4.9, plays: '1.5M', likes: 91 },
+                { id: 16, title: 'Pirate Quest', category: 'Adventure', emoji: '🏴‍☠️', rating: 4.6, plays: '1.2M', likes: 77 },
+                { id: 17, title: 'Neon Maze', category: 'Puzzle', emoji: '💫', rating: 4.8, plays: '2.3M', likes: 85 },
+                { id: 18, title: 'Zombie Defense', category: 'Shooting', emoji: '🧟', rating: 4.7, plays: '1.9M', likes: 82 },
+            ],
+            categories: [
+                { id: 'action', name: 'Action', emoji: '⚡', count: 324 },
+                { id: 'racing', name: 'Racing', emoji: '🏁', count: 187 },
+                { id: 'puzzle', name: 'Puzzle', emoji: '🧩', count: 256 },
+                { id: 'adventure', name: 'Adventure', emoji: '🗺️', count: 142 },
+                { id: 'multiplayer', name: 'Multiplayer', emoji: '👥', count: 98 },
+                { id: 'arcade', name: 'Arcade', emoji: '🕹️', count: 203 },
+                { id: 'shooting', name: 'Shooting', emoji: '🎯', count: 176 },
+                { id: 'sports', name: 'Sports', emoji: '🏆', count: 134 },
+            ],
+            searchSuggestions: [
+                'Best online games',
+                'Free browser games',
+                'Multiplayer games',
+                'Action games',
+                'Puzzle games',
+                'Racing games',
+                'HTML5 games',
+                'Games without download',
+                'Fun games for kids',
+                'Top rated games'
+            ]
+        };
+
+        // ============ UTILITY FUNCTIONS ============
+        function createGameCard(game) {
+            const stars = Array(Math.floor(game.rating)).fill('★').join('');
+            return `
+                <div class="game-card" onclick="playGame('${game.title}', ${game.id})">
+                    <div class="game-thumbnail">
+                        ${game.emoji}
+                        <button class="play-btn" onclick="event.stopPropagation(); playGame('${game.title}', ${game.id})">▶</button>
+                    </div>
+                    <div class="game-info">
+                        <div class="game-title">${game.title}</div>
+                        <div class="game-category">${game.category}</div>
+                        <div class="game-meta">
+                            <span class="game-rating">${stars}</span>
+                            <span class="game-plays">${game.plays}</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function createCategoryCard(category) {
+            return `
+                <a href="/games/${category.id}" class="category-card">
+                    <span class="category-icon">${category.emoji}</span>
+                    <div class="category-name">${category.name}</div>
+                    <div class="category-count">${category.count} games</div>
+                </a>
+            `;
+        }
+
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        function playGame(gameName, gameId) {
+            // Store recently played
+            let recentlyPlayed = JSON.parse(localStorage.getItem('recentlyPlayed') || '[]');
+            recentlyPlayed = recentlyPlayed.filter(id => id !== gameId);
+            recentlyPlayed.unshift(gameId);
+            recentlyPlayed = recentlyPlayed.slice(0, 10);
+            localStorage.setItem('recentlyPlayed', JSON.stringify(recentlyPlayed));
+
+            // Navigate to game page (in real app, this would load the game)
+            alert(`🎮 Loading: ${gameName}\n\nIn a real application, this would load the game player.`);
+        }
+
+        // ============ SEARCH FUNCTIONALITY ============
+        const searchBox = document.getElementById('search-box');
+        const searchSuggestions = document.getElementById('search-suggestions');
+
+        searchBox.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            if (query.length === 0) {
+                searchSuggestions.classList.remove('active');
+                return;
+            }
+
+            const filtered = gameDatabase.searchSuggestions.filter(suggestion => 
+                suggestion.toLowerCase().includes(query)
+            );
+
+            if (filtered.length > 0) {
+                searchSuggestions.innerHTML = filtered.map(suggestion => 
+                    `<div class="search-suggestion-item" onclick="searchBox.value='${suggestion}'; searchSuggestions.classList.remove('active');">${suggestion}</div>`
+                ).join('');
+                searchSuggestions.classList.add('active');
+            } else {
+                searchSuggestions.classList.remove('active');
+            }
+        });
+
+        searchBox.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                const query = searchBox.value;
+                alert(`Searching for: ${query}\n\nIn a real app, this would show search results.`);
+                searchSuggestions.classList.remove('active');
+            }
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.search-box') && !e.target.closest('.search-suggestions')) {
+                searchSuggestions.classList.remove('active');
+            }
+        });
+
+        // ============ THEME TOGGLE ============
+        const themeToggle = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        htmlElement.setAttribute('data-theme', savedTheme);
+        updateThemeToggle();
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            htmlElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeToggle();
+        });
+
+        function updateThemeToggle() {
+            const theme = htmlElement.getAttribute('data-theme');
+            themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+        }
+
+        // ============ MOBILE MENU TOGGLE ============
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // ============ FAQ TOGGLE ============
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', function() {
+                const answer = this.querySelector('p');
+                answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+            });
+        });
+
+        // ============ POPULATE SECTIONS ============
+        document.getElementById('featured-games').innerHTML = 
+            gameDatabase.featured.map(createGameCard).join('');
+
+        document.getElementById('trending-games').innerHTML = 
+            gameDatabase.trending.map(createGameCard).join('');
+
+        document.getElementById('categories-grid').innerHTML = 
+            gameDatabase.categories.map(createCategoryCard).join('');
+
+        document.getElementById('new-games-grid').innerHTML = 
+            gameDatabase.newGames.map(createGameCard).join('');
+
+        // ============ LAZY LOADING FOR IMAGES ============
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.classList.remove('lazy');
+                        observer.unobserve(img);
+                    }
+                });
+            });
+
+            document.querySelectorAll('img.lazy').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+
+        // ============ SEO: LAZY LOAD SECTIONS ============
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.section').forEach(section => {
+            sectionObserver.observe(section);
+        });
+
+        // ============ GOOGLE ANALYTICS READY (Add your tracking ID) ============
+        // This is where you'd add:
+        // gtag('event', 'page_view');
+        // gtag('event', 'game_played', { game_id: gameId });
+
+        // ============ PERFORMANCE: PRELOAD CRITICAL RESOURCES ============
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => {
+                console.log('DOM loaded - Playverse24 ready');
+            });
+        }
+
+        // Track core web vitals (for Google PageSpeed Insights)
+        console.log('✅ Playverse24 loaded - SEO optimized, mobile-first, and fast-loading');
+    </script>
+
+    <!-- Google Analytics Placeholder -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        // gtag('config', 'G-XXXXXXXXXX'); // Replace with your Google Analytics ID
+    </script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- FEATURED GAMES (High Priority) -->
+    <url>
+        <loc>https://playverse24.com/play/sky-runner</loc>
+        <lastmod>2026-03-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+        <image:image>
+            <image:loc>https://playverse24.com/assets/images/games/sky-runner.jpg</image:loc>
+            <image:title>Sky Runner - Free Online Action Game</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://playverse24.com/play/speed-racer</loc>
+        <lastmod>2026-03-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+        <image:image>
+            <image:loc>https://playverse24.com/assets/images/games/speed-racer.jpg</image:loc>
+            <image:title>Speed Racer - Free Online Racing Game</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://playverse24.com/play/block-master</loc>
+        <lastmod>2026-03-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+        <image:image>
+            <image:loc>https://playverse24.com/assets/images/games/block-master.jpg</image:loc>
+            <image:title>Block Master - Free Online Puzzle Game</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://playverse24.com/play/quest-legend</loc>
+        <lastmod>2026-03-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+        <image:image>
+            <image:loc>https://playverse24.com/assets/images/games/quest-legend.jpg</image:loc>
+            <image:title>Quest Legend - Free Online Adventure Game</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://playverse24.com/play/dino-jump</loc>
+        <lastmod>2026-03-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+        <image:image>
+            <image:loc>https://playverse24.com/assets/images/games/dino-jump.jpg</image:loc>
+            <image:title>Dino Jump - Free Online Arcade Game</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://playverse24.com/play/super-ball</loc>
+        <lastmod>2026-03-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+        <image:image>
+            <image:loc>https://playverse24.com/assets/images/games/super-ball.jpg</image:loc>
+            <image:title>Super Ball - Free Online Sports Game</image:title>
+        </image:image>
+    </url>
+    
+    <!-- TRENDING GAMES (High Priority) -->
+    <url>
+        <loc>https://playverse24.com/play/cosmic-battle</loc>
+        <lastmod>2026-03-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+        <image:image>
+            <image:loc>https://playverse24.com/assets/images/games/cosmic-battle.jpg</image:loc>
+            <image:title>Cosmic Battle - Free Online Shooting Game</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://playverse24.com/play/marble-blast</loc>
+        <lastmod>2026-03-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+        <image:image>
+            <image:loc>https://playverse24.com/assets/images/games/marble-blast.jpg</image:loc>
+            <image:title>Marble Blast - Free Online Puzzle Game</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://playverse24.com/play/monster-chase</loc>
+        <lastmod>2026-03-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+        <image:image>
+            <image:loc>https://playverse24.com/assets/images/games/monster-chase.jpg</image:loc>
+            <image:title>Monster Chase - Free Online Action Game</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://playverse24.com/play/ninja-strike</loc>
+        <lastmod>2026-03-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+        <image:image>
+            <image:loc>https://playverse24.com/assets/images/games/ninja-strike.jpg</image:loc>
+            <image:title>Ninja Strike - Free Online Action Game</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://playverse24.com/play/bubble-pop</loc>
+        <lastmod>2026-03-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+        <image:image>
+            <image:loc>https://playverse24.com/assets/images/games/bubble-pop.jpg</image:loc>
+            <image:title>Bubble Pop - Free Online Arcade Game</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://playverse24.com/play/snake-kingdom</loc>
+        <lastmod>2026-03-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+        <image:image>
+            <image:loc>https://playverse24.com/assets/images/games/snake-kingdom.jpg</image:loc>
+            <image:title>Snake Kingdom - Free Online Arcade Game</image:title>
+        </image:image>
+    </url>
+    
+    <!-- NEW GAMES (Medium-High Priority) -->
+    <url>
+        <loc>https://playverse24.com/play/robot-rampage</loc>
+        <lastmod>2026-03-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+        <image:image>
+            <image:loc>https://playverse24.com/assets/images/games/robot-rampage.jpg</image:loc>
+            <image:title>Robot Rampage - Free Online Action Game</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://playverse24.com/play/ice-runner</loc>
+        <lastmod>2026-03-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+        <image:image>
+            <image:loc>https://playverse24.com/assets/images/games/ice-runner.jpg</image:loc>
+            <image:title>Ice Runner - Free Online Racing Game</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://playverse24.com/play/logic-puzzle</loc>
+        <lastmod>2026-03-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+        <image:image>
+            <image:loc>https://playverse24.com/assets/images/games/logic-puzzle.jpg</image:loc>
+            <image:title>Logic Puzzle - Free Online Brain Game</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://playverse24.com/play/pirate-quest</loc>
+        <lastmod>2026-03-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+        <image:image>
+            <image:loc>https://playverse24.com/assets/images/games/pirate-quest.jpg</image:loc>
+            <image:title>Pirate Quest - Free Online Adventure Game</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://playverse24.com/play/neon-maze</loc>
+        <lastmod>2026-03-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+        <image:image>
+            <image:loc>https://playverse24.com/assets/images/games/neon-maze.jpg</image:loc>
+            <image:title>Neon Maze - Free Online Puzzle Game</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://playverse24.com/play/zombie-defense</loc>
+        <lastmod>2026-03-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+        <image:image>
+            <image:loc>https://playverse24.com/assets/images/games/zombie-defense.jpg</image:loc>
+            <image:title>Zombie Defense - Free Online Shooting Game</image:title>
+        </image:image>
+    </url>
+    
+    <!-- ACTION GAMES (Medium Priority) -->
+    <url>
+        <loc>https://playverse24.com/games/action</loc>
+        <lastmod>2026-03-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- RACING GAMES (Medium Priority) -->
+    <url>
+        <loc>https://playverse24.com/games/racing</loc>
+        <lastmod>2026-03-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- PUZZLE GAMES (Medium Priority) -->
+    <url>
+        <loc>https://playverse24.com/games/puzzle</loc>
+        <lastmod>2026-03-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- ADVENTURE GAMES (Medium Priority) -->
+    <url>
+        <loc>https://playverse24.com/games/adventure</loc>
+        <lastmod>2026-03-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- MULTIPLAYER GAMES (Medium Priority) -->
+    <url>
+        <loc>https://playverse24.com/games/multiplayer</loc>
+        <lastmod>2026-03-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- ARCADE GAMES (Medium Priority) -->
+    <url>
+        <loc>https://playverse24.com/games/arcade</loc>
+        <lastmod>2026-03-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- SHOOTING GAMES (Medium Priority) -->
+    <url>
+        <loc>https://playverse24.com/games/shooting</loc>
+        <lastmod>2026-03-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- SPORTS GAMES (Medium Priority) -->
+    <url>
+        <loc>https://playverse24.com/games/sports</loc>
+        <lastmod>2026-03-17</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+</urlset>
